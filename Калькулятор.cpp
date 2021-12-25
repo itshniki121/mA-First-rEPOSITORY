@@ -16,6 +16,7 @@ int main()
     double a, b, res;
     cout << "Выберите операцию:\n";
     cout << "(+, -, *, /) \n";
+    cout << "Так же можно найти корень числа (^)";
     cin >> oper;
     switch (oper)
     {
@@ -41,6 +42,10 @@ int main()
             cin >> a >> b;
             res = a / b;
             break; 
+    case '^':
+            cout << "Введите чилсло \n";
+            cin >> a;
+            res = sqrt(a);
     defoult: 
             return 0;
     }
